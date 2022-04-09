@@ -183,7 +183,6 @@ nav ul li a button:hover{
 
 
 
-
 .search-txt{
 
     border: none;
@@ -197,6 +196,28 @@ nav ul li a button:hover{
     line-height: 40px;
     width: 0px;
     
+}
+
+
+/*making search bar responsive*/
+
+@media screen and (max-width: 602px) {
+
+    .search-box{
+
+        position: absolute;
+        
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #2f3640;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+    }
+
+
+    
+
 }
 
 
@@ -479,7 +500,7 @@ footer  p{
 
     width: 100%;
     /* background: #181818; */
-    background: rgb(68, 49, 11);
+    background: #5E5559;
     padding: 8px 100px;
     text-align: center;
     color: #999;
