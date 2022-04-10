@@ -564,6 +564,10 @@ footer  p{
     flex-wrap: wrap;
  }
 
+ .cart-info p, small{
+     color: #fff;
+ }
+
 
 
  th{
@@ -577,6 +581,7 @@ footer  p{
  td{
 
     padding: 10px 5px;
+    color: #fff;
  }
 
  td input{
@@ -588,8 +593,9 @@ footer  p{
 
  td a{
 
-    color: #5E5559;
+    color: #e84118;
     font-size: 12px;
+    text-decoration: none;
  }
 
  td img{
