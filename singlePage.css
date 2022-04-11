@@ -1,0 +1,186 @@
+body{
+    color: white;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.the-header{
+    color: white;
+}
+nav{
+    width:90%;
+    background-color:#3A3739;
+    position: fixed;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.project-title{
+    font-size:35px;
+}
+nav ul li{
+    list-style-type:none;
+    display: inline-block;
+    padding:10px 50px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform:capitalize;
+} 
+.cart{
+    background-color:grey ;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding:20px 10px;
+    height: 10px;
+    margin-right:65px;
+    margin-top: 15px;    
+}
+.movie{
+    height:700px;
+    width:100%;
+    padding: 90px 0px;
+    background-color:#3A3739
+}
+.main img{
+    height: 720px;
+    width:430px;
+} 
+.about-movie{
+    width:550px;
+}
+.main{
+    width:1130px;
+    max-width:95%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-movie h1{
+    margin-top: 1px;
+    text-align: center;
+    font-size:40px;
+    text-transform: capitalize;
+}
+.about-movie h2{
+    font-size:30px;
+    text-transform: capitalize;
+    margin-bottom:20px;
+}
+.about-movie p{
+    font-size:20px ;
+}
+.add-cart{
+    color: white;
+    background-color:grey;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    /* margin-top: 50px; */
+    /* padding-top: 90px; */
+    padding:10px 25px;
+    /* height: 10px; */
+}
+@media(max-width:768px) {
+    body{
+        color: white;
+        padding: 0;
+        margin:0;
+    }
+    /* .the-header{
+        color: white;
+    } */
+    nav{
+        width:768px;
+        /* background-color: black; */
+        /* position: fixed; */
+        display: inline-block;
+        align-self: center;
+        justify-content: none;
+        padding:0;
+        /* padding-left: 0px;
+        padding-right: 0px; */
+    }
+    .project-title{
+        font-size:25px;
+        display: none;
+        
+    }
+    nav ul li{
+        list-style-type:none;
+        display: inline-block;
+        padding:10px 10px;
+    }
+    nav ul li a{
+        /* color:white; */
+        /* text-decoration: none; */
+        /* font-weight: bold; */
+        font-size: 35px;
+        /* text-transform:capitalize; */
+    } 
+    .cart{
+        display: none;
+        /* background-color:grey ;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding:20px 10px;
+        height: 0px;
+        margin-right:200px;
+        margin-top: 15px; */
+        /* padding:0px 0px; */
+        /* height: 0px; */
+        /* margin-right:0px; */
+        /* margin-top: 0px; */
+        
+    }
+    .movie{
+        height:100%;
+        width:768px;
+        padding: 90px 10px;
+    }
+    .main img{
+        height: 500px;
+        width:768px;
+    } 
+    .about-movie{
+        width:768px;
+    }
+    .main{
+        width:768px;
+        max-width:768%;
+        margin:0 auto;
+        display: inline;
+        align-items: center;
+    }
+    .about-movie h1{
+        text-align: center;
+        font-size:60px;
+        text-transform: capitalize;
+    }
+    .about-movie h2{
+        font-size:40px;
+    }
+    .about-movie p{
+        font-size:45px ;
+    }
+    .add-cart{
+        padding:10px 30px;
+        height: 0px;
+        padding-bottom:30px ;
+        font-size: 35px;
+    }
+ 
+ }
+
