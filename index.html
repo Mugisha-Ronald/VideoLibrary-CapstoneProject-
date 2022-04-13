@@ -4,223 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/c4942d9423.js" crossorigin="anonymous"></script>
+    <title>loginSignup</title>
 
-    <link rel="stylesheet" href="./style.css">
-
-     
+    <link rel="stylesheet" href="./src/main.css">
 </head>
 <body>
-
-    <nav>
-
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-
-            <i class="fas fa-bars" ></i>
-        </label>
-        <div class="logo">
-            <p>TheMoviePlanet</p>
-        </div>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="">Movies</a></li>
-            <li><a href="">Account</a></li>
-            <li><a href="./cart.html"><button>Go to cart</button></a></li>
-        </ul>
-    </nav>
-    <section class="search-bar">
-        <div class="search-box">
-            <input class="search-txt" type="text" placeholder="enter your search">
-            <a class="search-btn" href="#">
-                <i class="fas fa-search"></i>
-            </a>
-        </div>
-
-    </section>
-
-    
-    <section class="cards">
-        
-        <div class="card1">
-            <img src="./images/image_one.jpg" id="picOne" alt="">
-            <div class="container">
-                <h3>Name: <span>The Protector</span> </h3>
-                <h3>Rating</h3>
-
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input required type="text" class="form__input" id="loginInput" autofocus placeholder="Username or email">
+                <div class="form__input-error-message"></div>
             </div>
-            <div class="priceAndBtn">
-                <h3>Price: $<span >10</span></h3>
-                <button id="btnOne" class="addToCart">Add to cart</button>
+            <div class="form__input-group">
+                <input required type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
             </div>
-        </div>
-
-
-        <div class="card1">
-            <img src="./images/imageTwo.jpg" id="picTwo" alt="">
-            <div class="container">
-                <h3>Name: <span>Mad Max</span> </h3>
-                <h3>Rating</h3>
-
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Forgot your password?</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Create Account</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input required type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
             </div>
-            <div class="priceAndBtn">
-                <h3>Price: $<span>20</span></h3>
-                <button  class="addToCart">Add to cart</button>
+            <div class="form__input-group">
+                <input required type="text" class="form__input" autofocus placeholder="Email Address">
+                <div class="form__input-error-message"></div>
             </div>
-        </div>
-
-
-        <div class="card1">
-            <img src="./images/image_one.jpg" id="picThree" alt="">
-            <div class="container">
-                <h3>Name: <span>Uncharted</span> </h3>
-                <h3>Rating</h3>
-
+            <div class="form__input-group">
+                <input required type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
             </div>
-            <div class="priceAndBtn">
-                <h3>Price: $<span>30</span></h3>
-                <button  class="addToCart">Add to cart</button>
+            <div class="form__input-group">
+                <input required type="password" class="form__input" autofocus placeholder="Confirm password">
+                <div class="form__input-error-message"></div>
             </div>
-        </div>
-
-
-        
-
-
-
-        
-    </section>
-
-    <section class="cards2">
-        
-        <div class="card1">
-            <img src="./images/image_one.jpg" id="picFour" alt="">
-            <div class="container">
-                <h3>Name: <span>King Kong</span> </h3>
-                <h3>Rating</h3>
-
-            </div>
-            <div class="priceAndBtn">
-                <h3>Price: $<span>40</span></h3>
-                <button  class="addToCart">Add to cart</button>
-            </div>
-        </div>
-
-
-        <div class="card1">
-            <img src="./images/imageTwo.jpg" id="picFive" alt="">
-            <div class="container">
-                <h3>Name: <span>Fast&Furious</span> </h3>
-                <h3>Rating</h3>
-
-            </div>
-            <div class="priceAndBtn">
-                <h3>Price: $<span>15</span></h3>
-                <button  class="addToCart">Add to cart</button>
-            </div>
-        </div>
-
-
-        <div class="card1">
-            <img src="./images/image_one.jpg" id="picSix" alt="">
-            <div class="container">
-                <h3>Name: <span>Gemni Man</span> </h3>
-                <h3>Rating</h3>
-
-            </div>
-            <div class="priceAndBtn">
-                <h3>Price: $<span>25</span></h3>
-                <button  class="addToCart">Add to cart</button>
-            </div>
-        </div>
-
-       
-
-    
-    </section>
-
-    
-
-    
-
-
-    <footer>
-        <div class="footer-container">
-            <div class="sec aboutus">
-                <h2>About US</h2>
-                <p>
-                    TheMoviePlanet is the leading movie distributor and library in Uganda. We have all sorts of movies in all genres, new and old ones. You need a unique experience?, Well, we are here for you.
-                </p>
-    
-                <!-- <ul class="sci">
-                    <li><a href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul> -->
-    
-            </div>
-    
-            <div class="sec quickLinks">
-    
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Account</a></li>
-                    <!-- <li><a href="">Careers</a></li>
-                    <li><a href="">News</a></li> -->
-                    <li><a href="#">Contact</a></li>
-                </ul>
-    
-            </div>
-    
-            <div class="sec contact-part">
-    
-                <h2>Contact Info</h2>
-    
-                <ul class="info">
-    
-                    <li>
-                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span> Ntinda Opposite BlueTech Electronics,<br> Along Ntinda-kiwatule Road, <br>Uganda </span>
-                    </li>
-    
-    
-                    <li>
-                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <p><a href="tel:039-324-809">039-326-8591</a> <br>
-                        
-                            <a href="tel:020-092-5859">020-292-5679</a></p>
-                    </li>
-    
-    
-                    <li>
-                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                        <p><a href="">info@themovieplanet.com</a></p>
-                    </li>
-    
-                </ul>
-    
-    
-            </div>
-    
-        </div>
-    </footer>
-    
-    <div class="copyrightText">
-        <p>Copyright &copy; 2022 TheMoviePlanet. All Rights Reserved</p>
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
     </div>
-    
-    <script src="./index.js"></script>
-    
+
+
+
+    <script src="./src/main.js"></script>
 </body>
-
-
-
-
-
-
 </html>
