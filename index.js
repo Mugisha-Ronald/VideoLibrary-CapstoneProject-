@@ -65,12 +65,12 @@ let cart = document.querySelectorAll('.addToCart');
 for(let i = 0; i < cart.length; i++){
     cart[i].addEventListener('click',function(){
 
-        
+        addToCart(movies[i].id);
         totalPrice(movies[i])
 
-        addToLocalStorage(movies[i]);
+        //addToLocalStorage(movies[i]);
 
-        addToCart(movies[i].id);
+        
         
         
     })
@@ -178,21 +178,21 @@ function totalPrice(movie){
 
 // adding all elements to the local storage#
 
-function addToLocalStorage(scene){
-    const allMovieItems = JSON.parse(localStorage.getItem('allItems'));
+// function addToLocalStorage(scene){
+//     const allMovieItems = JSON.parse(localStorage.getItem('allItems'));
 
 
-    if(allMovieItems){
+//     if(allMovieItems){
 
-        //update the array
-        allMovieItems.unshift(scene)
-        localStorage.setItem('allItems', JSON.stringify(allMovieItems))
+//         //update the array
+//         allMovieItems.unshift(scene)
+//         localStorage.setItem('allItems', JSON.stringify(allMovieItems))
         
-    }else{
+//     }else{
 
-        localStorage.setItem('allItems', JSON.stringify([scene]));
-    }
-}
+//         localStorage.setItem('allItems', JSON.stringify([scene]));
+//     }
+// }
 
 
 
