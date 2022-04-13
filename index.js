@@ -4,7 +4,7 @@ let movies = [
     {   id: 0,
         name: 'The Protector',
         price: 10,
-        imgsrc:'./images/image_one.jpg',
+        imgsrc:'./images/protector.jpg',
         numberOfUnits:1,
         rating:3,
     },
@@ -12,7 +12,7 @@ let movies = [
     {   id: 1,
         name: 'Mad Max',
         price: 20,
-        imgsrc:'./images/image_one.jpg',
+        imgsrc:'./images/madmax.jpg',
         numberOfUnits:1,
         rating:4
     },
@@ -20,7 +20,7 @@ let movies = [
     {   id: 2,
         name: 'Uncharted',
         price: 30,
-        imgsrc:'./images/image_one.jpg',
+        imgsrc:'./images/unchartered.jpg',
         numberOfUnits:1,
         rating:5
     },
@@ -28,7 +28,7 @@ let movies = [
     {   id: 3,
         name: ' King Kong',
         price: 40,
-        imgsrc:'./images/image_one.jpg',
+        imgsrc:'./images/kingkong.jpg',
         numberOfUnits:1,
         rating:3
     },
@@ -37,7 +37,7 @@ let movies = [
     {   id: 4,
         name: 'Fast&Furious',
         price: 15,
-        imgsrc:'./images/image_one.jpg',
+        imgsrc:'./images/furious.jpg',
         numberOfUnits:1,
         rating:4
     },
@@ -46,7 +46,7 @@ let movies = [
     {   id: 5,
         name: 'Gemni Man',
         price: 25,
-        imgsrc:'./images/image_one.jpg',
+        imgsrc:'./images/gemni.jpg',
         numberOfUnits:1,
         rating:3
     }
