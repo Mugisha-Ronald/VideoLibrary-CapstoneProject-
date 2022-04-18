@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
        
-        window.open('./home.html')
+        window.open('./home.html','_self')
 
         setFormMessage(loginForm, "error", "Invalid username/password combination");
     });

@@ -144,35 +144,22 @@ nav ul li a button:hover{
 /*styling the search bar*/
 
 .search-bar{
-
-    margin-top: 35px;
+    margin-top: 20px;
+    padding-left: 300px;
 }
-
 .search-box{
-
-    position: absolute;
-    
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: fixed;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     background: #2f3640;
     height: 40px;
-    border-radius: 40px;
-    padding: 10px;
+    /* border-radius: 40px; */
+    padding: 5px;
 }
-
-
-.search-box:hover > .search-txt{
-    width: 240px;
-    padding: 0 6px;
-}
-
-
-
 .search-btn{
-
     color: #e84118;
     float: right;
-    width: 40px;
+    /* width: 20px; */
     height: 20px;
     border-radius: 50%;
     background: #2f3640;
@@ -180,11 +167,7 @@ nav ul li a button:hover{
     justify-content: center;
     align-items: center;
 }
-
-
-
 .search-txt{
-
     border: none;
     background: none;
     outline: none;
@@ -194,8 +177,7 @@ nav ul li a button:hover{
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
-    width: 0px;
-    
+    width: 600px;    
 }
 
 
@@ -205,19 +187,20 @@ nav ul li a button:hover{
 
     .search-box{
 
-        position: absolute;
-        
-        left: 50%;
+        position: relative;
+        left: 0%;
         transform: translate(-50%, -50%);
         background: #2f3640;
         height: 40px;
         border-radius: 40px;
         padding: 10px;
+        margin-top: 80px;
+        /* padding-top: 500px; */
     }
-
-
+    .search-btn{
+        display: none;
+    }
     
-
 }
 
 
@@ -239,16 +222,15 @@ body{
 
 .cards  img {
     border-radius: 5px;
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
   }
 
 
 .card1{
-
-    margin: 20px;
-    width: 270px;
-    height: 400px;
+    margin: 10px; 
+    width: 400px;
+    height: 500px;
 }
 
 .container {
@@ -256,12 +238,10 @@ body{
     color: #fff;
 }
 
-.card1 .priceAndBtn{
-   
+.card1 .priceAndBtn{   
     display: flex;
     justify-content: space-between;
     color: #fff;
-
 }
 
 
@@ -270,8 +250,9 @@ body{
     background-color: #5E5559;
     border: 2px solid #3A3739;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     padding: 5px 15px;
+    margin-right: 50px;
 }
 
 /*styling cards2*/
@@ -280,22 +261,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 200px;
+    padding-top: 10px;
     margin-top: 10px;
     
 }
 
 .cards2  img {
     border-radius: 5px;
-    width: 300px;
+    width: 400px;
     height: 500px;
   }
 
   .card1{
-
-    margin: 20px;
-    width: 270px;
-    height: 400px;
+    /* margin: 5px; */
+    width: 400px;
+    height: 500px;
 }
 
 
@@ -313,8 +293,6 @@ body{
 
         margin-bottom: 200px;
     }
-
-
 
     .cards2{
 
@@ -578,9 +556,13 @@ footer  p{
      font-weight: normal;
  }
 
+ #cart-quantity{
+     padding-left: 720px;
+ }
+
  td{
 
-    padding: 10px 5px;
+    padding: 20px 5px;
     color: #fff;
  }
 

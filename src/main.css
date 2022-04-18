@@ -121,11 +121,12 @@ body {
 }
 
 .form__link {
-    color: var(--color-secondary);
+    /* color: var(--color-secondary); */
+    /* cursor: pointer; */
+    color:white;
     text-decoration: none;
-    cursor: pointer;
 }
 
-.form__link:hover {
+/* .form__link:hover {
     text-decoration: underline;
-}
+} */
