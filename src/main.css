@@ -1,28 +1,101 @@
-/* Bordered form */
-form {
-    border: 3px solid #f1f1f1;
+body{
+  color: #fff;
+  background-color: #ffff;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size:20px;
+ }
+
+ /* Bordered form */
+ .register-form{
+   background-color: #3A3739;
+   padding-top: 0px;
+   margin-left: 350px;
+   margin-right: 250px;
+   margin-bottom: 0px;
+   border: 2px solid #f1f1f1;
+   width:600px;  
+ } 
+ .container h1{
+   margin-top: 0;
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+ }
+
+ .container p a {
+   /* background-colo: #3A3739; */
+   color: #ffff;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+ }
+
+ .login-container{
+   width: 600px;
+  /* height: 60%; */
+  /* display: block; */
+  margin: 0px;
+  padding-top: 0;
+  background-color: #3A3739;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 150px;
+} 
+.login-container button{
+  display: block;
+  background-color: grey;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  padding: 14px 20px;
+  margin: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 150px; 
+  align-items: center; 
   }
-  
+  #check{
+    padding-left: 0px;
+  } 
+
   /* Full-width inputs */
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+/* input[type=text], input[type=password] */
+.login-container input{
+    /* width: 400px; */
+    padding-left: 20px;
+    /* padding: 12px 20px; */
+    /* margin: 8px 10px; */
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-  }
+  } 
+  
   
   /* Set a style for all buttons */
-  button {
-    background-color: #04AA6D;
+  #registerbtn { 
+    display: block;
+    background-color: grey;
     color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 10px 200px;
     border: none;
     cursor: pointer;
-    width: 100%;
-  }
+    width: 150px;
+    align-items: center; 
+    }
+   .container-signin p{
+     margin-top: 0;
+     font-family: 'Poppins', sans-serif;
+     /* margin-left: 20px; */
+     text-align: center;
+   }
+   .container-signin p a{
+     color: #ffff;
+     text-decoration: none;
+     font-family: 'Poppins', sans-serif;
+     /* margin-left: 20px; */
+   }
   
   /* Add a hover effect for buttons */
   button:hover {
@@ -37,26 +110,31 @@ form {
   }
   
   /* Center the avatar image inside this container */
-  .imgcontainer {
+  .imgcontainer { 
     text-align: center;
     margin: 24px 0 12px 0;
-  }
-  
-  /* Avatar image */
-  img.avatar {
+  } 
+   
+  /* Avatar image */ 
+  img.avatar { 
     width: 40%;
     border-radius: 50%;
-  }
+  } 
   
-  /* Add padding to containers */
-  .container {
+  /* Add padding to containers */ 
+  .login-container { 
     padding: 16px;
   }
   
   /* The "Forgot password" text */
-  span.psw {
+   span.psw {
     float: right;
-    padding-top: 16px;
+    padding-top: 5px;
+    color: #ffff;
+  }
+  span.psw a{
+    color: #ffff;
+    text-decoration: none;
   }
   
   /* Change styles for span and cancel button on extra small screens */
@@ -69,11 +147,6 @@ form {
       width: 100%;
     }
   }
-
-
-
-
-
 
   /* Register css */
 
@@ -116,6 +189,7 @@ hr {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
+  
 }
 
 .registerbtn:hover {
