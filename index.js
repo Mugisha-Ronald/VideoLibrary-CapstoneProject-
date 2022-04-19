@@ -197,3 +197,29 @@ function totalPrice(movie){
 
 
 
+
+
+
+// making the search bar function
+const searchBar =document.querySelector('.search-txt');
+
+// add EventListener to the searchBar
+searchBar.addEventListener('keyup',(e) =>{
+    const searchedMovie = e.target.value;
+    let movieSelection =movies.filter((name) => {
+        let movieName=name.name;
+        if(movieName === searchedMovie){
+            // return 'name'; 
+            console.log(name)
+        }else{
+            return "Not Availiable"
+        }
+                      
+    })   
+})
+
+
+
+
+
+
